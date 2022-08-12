@@ -8,8 +8,8 @@ Basic Usage
 		v-model="form.brand"
 		label="Select Brand"
 		placeholder="Search for Brands"
-		:data-object="selection_brand.dataObj"
-		:loading="selection_brand.loading"
+		:data-object="some_dataObj"
+		:loading="some_loading"
 		@search="searchBrand"
 	>
 		<template #activator="{ on }">
@@ -31,7 +31,8 @@ Basic Usage
 export default{
 	data () {
 		return {
-			selection_brand: {},
+			some_dataObj : {},
+			some_loading : false,
 		}
 	}
 
@@ -58,8 +59,8 @@ advance usage:
 		label="Select Category"
 		placeholder="Search for Categories"
 		multiple
-		:data-object="selection_game_category.dataObj"
-		:loading="selection_game_category.loading"
+		:data-object="some_dataObj"
+		:loading="some_loading"
 		@search="searchGameCategory"
 	>
 		<template #activator="{ on }">

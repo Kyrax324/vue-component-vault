@@ -26,7 +26,7 @@
 					</v-row>
 				</v-card-title>
 				<v-divider></v-divider>
-				<v-card-text class="pa-0">
+				<v-card-text v-if="dataObject.data" class="pa-0">
 					<div class="pa-2">
 						<v-text-field
 							v-model="search"
